@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 list_of_names = ['Roger', 'Mary', 'Luisa', 'Elvis']
 list_of_ages  = [23, 24, 19, 86]
 list_of_heights_cm = [175, 162, 178, 182]
+
 for name in list_of_names:
   print("The name {:} is {:} letters long".format(name, len(name)))
 
@@ -19,7 +20,7 @@ name_dict={}
 
 for x in range(0,len(list_of_names)):
 	new_person=person(list_of_names[x],list_of_ages[x],list_of_heights_cm[x])
-	name_dict[list_of_names[x]]=new_perso
+	name_dict[list_of_names[x]]=new_person
 print(name_dict)
 
 #part F
@@ -35,8 +36,5 @@ plt.suptitle('Ages vs Heights')
 plt.xlabel('Age')
 plt.ylabel('Height in cm')
 plt.grid()
-plt.show()
 plt.savefig("AvH.png")
-
-  
-
+plt.show()
